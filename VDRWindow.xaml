@@ -1,0 +1,24 @@
+﻿<Window x:Class="P2P_VDR_App.VDRWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="VDR Mode" Height="500" Width="700">
+    <Grid>
+        <!-- Title -->
+        <TextBlock Text="VDR Mode - File Management" HorizontalAlignment="Center" VerticalAlignment="Top" 
+                   FontSize="24" FontWeight="Bold" Margin="0,10,0,0"/>
+
+        <!-- Buttons -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,50,0,0">
+            <Button Name="btnLogin" Content="Login" Width="150" Height="50" 
+                    Background="#4CAF50" Foreground="White" FontWeight="Bold" Margin="10,0,10,0" 
+                    Click="btnLogin_Click"/>
+            <Button Name="btnViewFiles" Content="View Files" Width="150" Height="50" 
+                    Background="#FF9800" Foreground="White" FontWeight="Bold" Margin="10,0,10,0" 
+                    Click="btnViewFiles_Click"/>
+        </StackPanel>
+
+        <!-- File List -->
+        <ListBox Name="fileList" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                 Margin="20,120,20,20"/>
+    </Grid>
+</Window>

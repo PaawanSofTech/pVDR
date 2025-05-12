@@ -1,0 +1,19 @@
+﻿<Window x:Class="P2P_VDR_App.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="P2P and VDR Application" Height="300" Width="400">
+    <Grid>
+        <!-- Title -->
+        <TextBlock Text="Select Mode" HorizontalAlignment="Center" VerticalAlignment="Top" 
+                  Foreground="#A61095"  FontSize="24" FontWeight="Bold" Margin="0,20,0,0"/>
+
+        <!-- Buttons -->
+        <Button Name="btnP2P" Content="P2P Mode" Width="150" Height="50" 
+                HorizontalAlignment="Left" VerticalAlignment="Center" Margin="30,0,0,0" 
+                Background="#4CAF50" Foreground="White" FontWeight="Bold" Click="btnP2P_Click"/>
+
+        <Button Name="btnVDR" Content="VDR Mode" Width="150" Height="50" 
+                HorizontalAlignment="Left" VerticalAlignment="Center" Margin="220,0,0,0" 
+                Background="#2196F3" Foreground="White" FontWeight="Bold" Click="btnVDR_Click"/>
+    </Grid>
+</Window>
